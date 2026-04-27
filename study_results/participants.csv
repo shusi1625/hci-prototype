@@ -1,0 +1,21 @@
+participant_id,group,task_order,major_category,ux_fe_experience,digital_skill,signup_payment_frequency
+P01,G1,A S1 -> B S2,design_cs,yes,6,high
+P02,G2,B S1 -> A S2,non_design_cs,no,4,medium
+P03,G3,A S2 -> B S1,non_design_cs,no,5,medium
+P04,G4,B S2 -> A S1,design_cs,yes,6,high
+P05,G1,A S1 -> B S2,non_design_cs,no,5,high
+P06,G2,B S1 -> A S2,design_cs,no,5,medium
+P07,G3,A S2 -> B S1,non_design_cs,no,3,low
+P08,G4,B S2 -> A S1,design_cs,yes,7,high
+P09,G1,A S1 -> B S2,non_design_cs,no,4,medium
+P10,G2,B S1 -> A S2,non_design_cs,no,5,high
+P11,G3,A S2 -> B S1,design_cs,yes,6,medium
+P12,G4,B S2 -> A S1,non_design_cs,no,4,low
+P13,G1,A S1 -> B S2,design_cs,no,5,medium
+P14,G2,B S1 -> A S2,non_design_cs,no,3,low
+P15,G3,A S2 -> B S1,design_cs,yes,6,high
+P16,G4,B S2 -> A S1,non_design_cs,no,5,medium
+P17,G1,A S1 -> B S2,non_design_cs,no,4,medium
+P18,G2,B S1 -> A S2,design_cs,yes,7,high
+P19,G3,A S2 -> B S1,non_design_cs,no,5,medium
+P20,G4,B S2 -> A S1,non_design_cs,no,4,medium

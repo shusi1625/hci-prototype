@@ -1,0 +1,11 @@
+metric,condition_a,condition_b
+success_rate,85%,100%
+average_signup_time_sec,12.9,9.4
+average_plan_time_sec,12.7,8.8
+average_confirm_time_sec,4.2,3.7
+average_task_total_time_sec,29.8,21.8
+average_error_count,0.25,0.05
+average_reselect_count,0.20,0.00
+average_cta_delay_sec,2.48,1.33
+average_overall_ease_score,4.45,5.85
+average_difference_awareness_score,5.15,

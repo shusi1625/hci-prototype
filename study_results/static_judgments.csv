@@ -1,0 +1,21 @@
+participant_id,input_field_choice,option_selection_choice,cta_copy_choice,static_judgment_note
+P01,B,B,B,Information remains visible and feels easier to verify.
+P02,B,A,B,Dropdown looked cleaner at first glance.
+P03,B,B,B,Condition B looked clearer overall.
+P04,B,B,B,Preferred labels radio buttons and explicit CTA.
+P05,B,A,B,Dropdown looked simpler for option selection.
+P06,B,B,B,Condition B explained the flow better.
+P07,A,A,B,Preferred simpler looking screens for input and options.
+P08,B,B,B,Preferred visible comparison information.
+P09,B,B,B,Condition B looked more stable.
+P10,B,B,A,Thought a simple confirm button was enough.
+P11,B,B,B,Preferred explicit guidance.
+P12,A,A,B,Found condition A familiar and simple.
+P13,B,B,B,Condition B looked more helpful.
+P14,B,B,B,Radio buttons looked clearer despite the screen feeling denser.
+P15,B,B,B,Preferred condition B overall.
+P16,B,B,B,Condition B looked better for preventing selection mistakes.
+P17,B,A,B,Dropdown looked visually cleaner.
+P18,B,B,B,Condition B looked clearer.
+P19,B,B,B,Preferred condition B.
+P20,B,A,B,Dropdown looked concise for option selection.
