@@ -1,21 +1,21 @@
 participant_id,input_field_choice,option_selection_choice,cta_copy_choice,static_judgment_note
-P01,B,B,B,Information remains visible and feels easier to verify.
-P02,B,A,B,Dropdown looked cleaner at first glance.
-P03,B,B,B,Condition B looked clearer overall.
-P04,B,B,B,Preferred labels radio buttons and explicit CTA.
-P05,B,A,B,Dropdown looked simpler for option selection.
-P06,B,B,B,Condition B explained the flow better.
-P07,A,A,B,Preferred simpler looking screens for input and options.
-P08,B,B,B,Preferred visible comparison information.
-P09,B,B,B,Condition B looked more stable.
-P10,B,B,A,Thought a simple confirm button was enough.
-P11,B,B,B,Preferred explicit guidance.
-P12,A,A,B,Found condition A familiar and simple.
-P13,B,B,B,Condition B looked more helpful.
-P14,B,B,B,Radio buttons looked clearer despite the screen feeling denser.
-P15,B,B,B,Preferred condition B overall.
-P16,B,B,B,Condition B looked better for preventing selection mistakes.
-P17,B,A,B,Dropdown looked visually cleaner.
-P18,B,B,B,Condition B looked clearer.
-P19,B,B,B,Preferred condition B.
-P20,B,A,B,Dropdown looked concise for option selection.
+P01,B,B,B,정보가 계속 보이는 UI가 검토하기 쉬워 보였다.
+P02,B,A,B,드롭다운이 첫인상에서는 더 깔끔해 보였다.
+P03,B,B,B,조건 B가 전반적으로 더 명확해 보였다.
+P04,B,B,B,레이블과 라디오 버튼 그리고 명확한 CTA를 선호했다.
+P05,B,A,B,옵션 선택은 A가 더 단순해 보였다.
+P06,B,B,B,조건 B가 사용 흐름을 더 잘 설명한다고 판단했다.
+P07,A,A,B,입력과 옵션에서는 단순한 화면을 일부 선호했다.
+P08,B,B,B,비교 정보가 보이는 조건 B를 선호했다.
+P09,B,B,B,조건 B가 더 안정적으로 보였다.
+P10,B,B,A,CTA는 단순한 확인 버튼만으로도 충분하다고 판단했다.
+P11,B,B,B,명확한 안내가 있는 조건 B를 선호했다.
+P12,A,A,B,조건 A가 더 익숙하고 단순해 보였다.
+P13,B,B,B,조건 B가 더 친절해 보였다.
+P14,B,B,B,화면 밀도는 높아도 라디오 버튼이 더 명확해 보였다.
+P15,B,B,B,전반적으로 조건 B를 선호했다.
+P16,B,B,B,조건 B가 선택 실수를 줄이는 데 좋아 보였다.
+P17,B,A,B,옵션 선택에서는 드롭다운이 시각적으로 더 깔끔해 보였다.
+P18,B,B,B,조건 B가 더 명확하다고 판단했다.
+P19,B,B,B,조건 B를 선호했다.
+P20,B,A,B,옵션 선택은 드롭다운이 더 간결해 보였다.

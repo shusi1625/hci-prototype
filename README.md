@@ -1,10 +1,20 @@
-# UI 원칙 실효성 검증 User Study 보고서
+# UI 원칙 실효성 검증 사용자 연구 보고서
 
 > 데이터 성격: 본 문서는 `study_results/`의 가상 합성 데이터셋을 바탕으로 작성한 분석 보고서입니다. 실제 운영 시에는 동일한 설계와 지표 구조로 수집된 로그/설문 데이터로 대체할 수 있습니다.
 
 ## 0. 한 줄 요약
 
 본 연구는 **정적 판단, 실제 과업 수행, 사후 설문**을 함께 비교하여, 가이드라인 기반 UI가 단순히 좋아 보이는 수준을 넘어 실제 수행 효율과 명확성을 개선하는지 검토했다. 합성 데이터 기준으로 조건 B는 조건 A보다 평균 과업 시간이 8.0초 짧고, 성공률은 85%에서 100%로 높았으며, 사후 설문에서도 입력 명확성, 선택 비교 용이성, CTA 예측 가능성, 전체 편의성에서 모두 더 높은 점수를 보였다.
+
+### 0.1 주요 발견 요약
+
+| 발견 | 근거 | 해석 |
+|---|---|---|
+| 조건 B는 실제 수행에서 더 빠르다 | 평균 과업 완료 시간 A 29.80초, B 21.80초 | 가이드라인 기반 UI가 짧은 과업에서도 수행 시간을 줄일 수 있다. |
+| 조건 B는 더 안정적이다 | 성공률 A 85%, B 100%; 오류 A 0.25회, B 0.05회 | label, radio button, 명확한 CTA가 실수 가능성을 낮춘다. |
+| 옵션 선택에서 가장 큰 행동 차이가 나타났다 | 선택 단계 시간 A 12.70초, B 8.75초 | 비교가 필요한 선택 과업에서는 모든 옵션을 노출하는 방식이 유리하다. |
+| 정적 판단과 실제 수행은 완전히 같지 않다 | 옵션 선택에서 6명이 A를 더 좋아 보인다고 판단했지만 실제 수행은 B가 우세 | 깔끔해 보이는 UI가 실제 과업에 항상 유리한 것은 아니다. |
+| CTA 효과는 성공률보다 확신 지표에서 잘 드러난다 | CTA 지연 A 2.47초, B 1.28초; CTA 예측 점수 A 4.40, B 6.10 | CTA 문구는 오류보다 클릭 망설임과 행동 예측 가능성에 영향을 준다. |
 
 ---
 
@@ -236,26 +246,26 @@ xychart-beta
 
 | ID | 더 편한 조건 | 사용 희망 | 입력 A/B | 선택 A/B | CTA A/B | 전체 A/B | 차이 인지 | 가장 큰 차이 | 가장 도움 | 생각 변화 | 변화 내용 | 추가 의견 |
 |---|---|---|---|---|---|---|---:|---|---|---|---|---|
-| P01 | B | B | 5/7 | 4/7 | 5/7 | 5/7 | 6 | 옵션 | 옵션 | 아니오 | - | Radio buttons made comparison easier. |
-| P02 | B | B | 4/6 | 4/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 예 | Dropdown looked clean but radio was easier in use. | Seeing all options at once helped. |
-| P03 | B | B | 5/6 | 5/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 아니오 | - | Condition B was less confusing overall. |
-| P04 | B | B | 5/7 | 5/7 | 5/7 | 5/7 | 6 | 입력 | 입력 | 아니오 | - | Persistent labels felt stable. |
-| P05 | B | B | 5/6 | 4/6 | 5/6 | 5/6 | 5 | 옵션 | 옵션 | 예 | Dropdown looked simple but radio was easier for comparison. | Condition B felt more helpful. |
-| P06 | B | B | 5/6 | 5/6 | 5/6 | 5/6 | 5 | 옵션 | 옵션 | 아니오 | - | Selection information was easier to inspect. |
-| P07 | B | B | 3/5 | 3/5 | 3/5 | 3/5 | 6 | 입력 | 입력 | 예 | Simple-looking A became less clear during actual input. | I had to re-check field meanings in A. |
-| P08 | 비슷 | B | 6/7 | 6/7 | 6/7 | 6/7 | 4 | CTA | CTA | 아니오 | - | Both were easy but B was more explicit. |
-| P09 | B | B | 4/6 | 5/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 아니오 | - | Radio was better for comparing choices. |
-| P10 | B | B | 5/6 | 5/6 | 4/6 | 5/6 | 4 | CTA | CTA | 예 | Confirm seemed enough at first but explicit copy felt safer. | CTA difference was small but noticeable. |
-| P11 | B | B | 5/7 | 5/7 | 5/7 | 5/7 | 6 | 입력 | 입력 | 아니오 | - | Condition B was clearer overall. |
-| P12 | B | B | 3/5 | 3/5 | 3/5 | 3/5 | 6 | 옵션 | 옵션 | 예 | A looked familiar but actual selection was easier in B. | I hesitated with dropdown. |
-| P13 | B | B | 4/6 | 5/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 아니오 | - | Visible comparison information helped. |
-| P14 | B | B | 3/4 | 3/4 | 3/4 | 3/4 | 5 | 입력 | 입력 | 예 | A looked simple but guidance was insufficient. | B was still not hard but better. |
-| P15 | B | B | 6/7 | 6/7 | 6/7 | 6/7 | 5 | 옵션 | 옵션 | 아니오 | - | Difference was clear although the task was easy. |
-| P16 | B | B | 4/6 | 5/6 | 4/6 | 4/6 | 5 | CTA | CTA | 아니오 | - | Button text felt clearer. |
-| P17 | B | B | 4/6 | 4/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 예 | Dropdown looked cleaner but radio was faster in practice. | Option comparison was the key difference. |
-| P18 | 비슷 | B | 6/7 | 6/7 | 6/7 | 6/7 | 4 | CTA | CTA | 아니오 | - | As an experienced user both were easy. |
-| P19 | B | B | 5/6 | 5/6 | 4/6 | 5/6 | 5 | 입력 | 입력 | 아니오 | - | Labels felt more stable. |
-| P20 | B | B | 4/6 | 4/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 예 | Dropdown looked concise but radio was better for comparison. | Condition B reduced the chance of mistakes. |
+| P01 | B | B | 5/7 | 4/7 | 5/7 | 5/7 | 6 | 옵션 | 옵션 | 아니오 | - | 라디오 버튼이 선택지를 비교하기 더 쉬웠다. |
+| P02 | B | B | 4/6 | 4/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 예 | 드롭다운은 보기에는 깔끔했지만 실제 사용에서는 라디오 버튼이 더 편했다. | 선택지가 한 번에 보여서 도움이 됐다. |
+| P03 | B | B | 5/6 | 5/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 아니오 | - | 조건 B가 전체적으로 덜 헷갈렸다. |
+| P04 | B | B | 5/7 | 5/7 | 5/7 | 5/7 | 6 | 입력 | 입력 | 아니오 | - | 레이블이 계속 보여서 입력할 때 안정감이 있었다. |
+| P05 | B | B | 5/6 | 4/6 | 5/6 | 5/6 | 5 | 옵션 | 옵션 | 예 | 드롭다운이 단순해 보였지만 비교할 때는 라디오 버튼이 더 쉬웠다. | 조건 B가 더 친절하게 느껴졌다. |
+| P06 | B | B | 5/6 | 5/6 | 5/6 | 5/6 | 5 | 옵션 | 옵션 | 아니오 | - | 선택 정보를 확인하기 쉬웠다. |
+| P07 | B | B | 3/5 | 3/5 | 3/5 | 3/5 | 6 | 입력 | 입력 | 예 | 단순해 보이던 A가 실제 입력 중에는 덜 명확하게 느껴졌다. | A에서는 필드 의미를 다시 확인하게 됐다. |
+| P08 | 비슷 | B | 6/7 | 6/7 | 6/7 | 6/7 | 4 | CTA | CTA | 아니오 | - | 둘 다 어렵지는 않았지만 B가 더 명확했다. |
+| P09 | B | B | 4/6 | 5/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 아니오 | - | 라디오 버튼이 선택지를 비교하기에 더 좋았다. |
+| P10 | B | B | 5/6 | 5/6 | 4/6 | 5/6 | 4 | CTA | CTA | 예 | 처음에는 확인 버튼도 충분해 보였지만 실제로는 명확한 문구가 더 안심됐다. | CTA 차이는 크지 않았지만 분명히 느껴졌다. |
+| P11 | B | B | 5/7 | 5/7 | 5/7 | 5/7 | 6 | 입력 | 입력 | 아니오 | - | 조건 B가 전반적으로 더 명확했다. |
+| P12 | B | B | 3/5 | 3/5 | 3/5 | 3/5 | 6 | 옵션 | 옵션 | 예 | A가 익숙해 보였지만 실제 선택은 B가 더 쉬웠다. | 드롭다운에서 잠깐 망설였다. |
+| P13 | B | B | 4/6 | 5/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 아니오 | - | 비교할 정보가 바로 보여서 도움이 됐다. |
+| P14 | B | B | 3/4 | 3/4 | 3/4 | 3/4 | 5 | 입력 | 입력 | 예 | A가 단순해 보였지만 실제로는 안내가 부족했다. | B도 아주 쉽지는 않았지만 A보다는 나았다. |
+| P15 | B | B | 6/7 | 6/7 | 6/7 | 6/7 | 5 | 옵션 | 옵션 | 아니오 | - | 과업은 쉬웠지만 두 조건의 차이는 분명했다. |
+| P16 | B | B | 4/6 | 5/6 | 4/6 | 4/6 | 5 | CTA | CTA | 아니오 | - | 버튼 문구가 더 명확하게 느껴졌다. |
+| P17 | B | B | 4/6 | 4/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 예 | 드롭다운이 더 깔끔해 보였지만 실제로는 라디오 버튼이 더 빨랐다. | 선택지 비교가 핵심 차이였다. |
+| P18 | 비슷 | B | 6/7 | 6/7 | 6/7 | 6/7 | 4 | CTA | CTA | 아니오 | - | 숙련자 입장에서는 둘 다 쉬웠다. |
+| P19 | B | B | 5/6 | 5/6 | 4/6 | 5/6 | 5 | 입력 | 입력 | 아니오 | - | 레이블이 있는 쪽이 더 안정적으로 느껴졌다. |
+| P20 | B | B | 4/6 | 4/6 | 4/6 | 4/6 | 5 | 옵션 | 옵션 | 예 | 드롭다운이 간결해 보였지만 실제 비교에는 라디오 버튼이 더 나았다. | 조건 B가 실수 가능성을 줄여주는 느낌이었다. |
 
 ---
 
